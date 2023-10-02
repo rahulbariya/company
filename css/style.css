@@ -1,0 +1,624 @@
+html{
+        /*font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;*/
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif !important;
+}
+/**********************************************************************/
+.font-bold{
+    font-weight: bold;
+}
+.red{
+    color: #E74C3C;
+}
+.green{
+    color: #138D75;
+}
+
+
+/**********************************************************************/
+/************  LOGIN/REGISTER CSS START   *****************/
+
+.main-wrapper{
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+.outer-wrapper{
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    width: 28%;
+}
+.login-page{
+    /*height: 100%;*/
+    height: auto;
+    width: 100%;
+    background-color: #03a9f412;
+}
+.inner-wrapper{
+    padding: 20px 0;
+    height: 100%;
+    margin: 0 auto;
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.login-box{
+    background-color: #ffffff;
+    /*border: 1px solid #000;*/
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+}
+.login-head{
+    color: #3b5998;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.login-head h1{
+    font-size: 34px;
+}
+.frg-link{
+    display: block;
+    text-align: center;
+}
+.frg-link a{
+    text-decoration: none;
+    color: #5A5A5A;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.reg-link{
+    margin: 20px 0;
+}
+input[type=text],input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+    border-radius: 5px;
+    border: 1px solid #989898;
+    font-size: 18px;
+}
+input[type=text]:focus,
+input[type=password]:focus{
+    outline: none;
+}
+input[type=text].error,
+input[type=password].error{
+    border: 1px solid #E91E63;
+}
+label.error{
+    color: #E91E63 !important;
+    float: left !important;
+    font-weight: 100 !important;
+    width: 100% !important;
+}
+
+.btn {
+    background-color: #3b5998;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-family: 'Roboto', sans-serif !important;
+    border-radius: 5px;
+
+    font-size: 18px;
+}
+.btn-small{
+
+    width: 150px;
+    padding: 12px 32px;
+}
+.btn:hover{
+background-color: #375187;
+    /*background-color: #344568;*/
+    transition-duration: 0.6s;
+}
+.btn:focus{
+    outline: none;
+}
+.font-bold{
+    font-weight: bold;
+}
+.register-page .outer-wrapper{
+    width: 35%;
+}
+ .reg-fname{
+    display: inline-block;
+    float: left;
+    width: 48%;
+}
+ .reg-lname{
+    /*width: 47%;
+    float: right;
+    margin-left: 20px;*/
+    display: inline-block;
+    float: right;
+    width: 48%;
+}
+ .pass-change{
+     color: #CD5C5C;
+    font-weight: bold;
+     padding-bottom: 5px;
+     border-bottom: 1px solid #CD5C5C;
+ }
+.server-err{
+    float: left;
+    color: #F44336;
+}
+#add_company .server-err{
+   margin-left: 30%;
+}
+#meterInput {
+    color: #F44336 !important;
+    font-weight: bold;
+}
+
+/************  LOGIN/REGISTER  CSS END   *****************/
+
+
+
+/************  DASHBOARD CSS START   *****************/
+.dash-main{
+   /* background-color: #1888CF;*/
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.dash-left{
+    background-color: #0D6187;
+    display: block;
+    float: left;
+    /*width: 15%;*/
+    /*width: 250px;*/
+    width: 225px;
+    height: 100%;
+
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+}
+.dash-top{
+    /*background-color: #E95F1B;*/
+
+    background-color: #566573;
+
+    /*height: 90px;*/
+    height: 60px;
+    margin-left: 225px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.dash-top h1{
+    text-align: center;
+    /*font-size: 35px;
+    margin: 25px 0;*/
+    font-size: 27px;
+    margin: 14px 0;
+
+    /*color: #e91e63;*/
+    color: #fff;
+    font-family: 'Roboto', sans-serif !important;
+}
+.dash-right{
+    background-color: #E7F4FF;
+    display: block;
+    /*float: left;*/
+    /*width: 82.7%;*/
+   /* width: 82.9%;*/
+    /*height: 87%;*/
+    height: auto;
+    padding: 0 18px;
+    /*padding: 0 18px 18px 18px;*/
+    margin-left: 225px;
+    min-height: 87.5%;
+
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.dash-right::-webkit-scrollbar {
+    display: none;
+}
+
+
+ .user-profile{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+     background-color: #1587BB;
+}
+.dash-user-img {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.dash-user-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: #fff;
+
+}
+.user-profile .username{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    padding-top: 6px;
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.dash-list{
+    display: block;
+    float: left;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.dash-list li{
+    list-style-type: none;
+
+}
+.dash-list li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+
+}
+.dash-list li a:hover,.dash-list li a.active{
+    background-color: #0E9DDE;
+}
+.dash-list .fa,.dash-list .fab,.dash-head .fa{
+    float: left;
+    font-size: 23px;
+    display: block;
+    margin: 11px 15px 0 25px;
+    color: #fff;
+}
+.dash-list .fab{
+    margin: 11px 9px 0 25px;
+}
+.dash-head .fa{
+    font-size: 20px;
+    margin: -1px 5px 0 5px;
+}
+.dash-head{
+    display: block;
+    width: 100%;
+    height: auto;
+    float: left;
+    /*padding: 15px 0;*/
+    padding-top: 15px;
+}
+.dash-head .control-btn{
+    padding: 10px;
+    background-color: #e91e63;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.right {
+    float: right;
+}
+.left{
+    float: left;
+}
+.dash-contain-wapper{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+}
+.edit-prof{
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+.dash-title{
+    color: #0D6187;
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 2px solid #0D6187;
+}
+
+.edit-name{
+    display: block;
+    float: left;
+    width: 50%;
+}
+.order{
+    margin-left: 10%;
+}
+.edit-name label{
+    color: #707B7C;
+    font-weight: 600;
+}
+.order label.error{
+    color: #E91E63;
+    float: left;
+    margin-left: 25%;
+    font-weight: 400;
+}
+#add_company label.error{
+    margin-left: 30%;
+    padding-top: 5px;
+}
+
+/*********  Browser Button CSS Start   *********/
+.prof-upld::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.prof-upld::before {
+    content: 'Select profile picture';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    margin-top: 15px;
+}
+.prof-upld:hover::before {
+    border-color: black;
+}
+.prof-upld::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+/*********  Browser Button CSS End   *********/
+
+
+/***************************************** TABLE CSS property start ****************************/
+.tbl-sell {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px 0;
+    display: inline-table;
+}
+.tbl-sell th{
+    background-color: #0D6187;
+    color: #fff;
+}
+.tbl-sell th,.tbl-sell td{
+    border: 1px solid #ABB2B9;
+    padding: 10px;
+    text-align: center;
+}
+.tbl-sell tr:nth-child(even){background-color: #ffffff}
+.tbl-sell tr:nth-child(odd){background-color: #f2f2f2}
+.tbl-sell tr:hover {
+    /*background-color: #D5DBDB;
+    cursor: pointer;*/
+}
+.company-acc .tbl-sell th,.tbl-sell td{
+    padding: 10px 5px;
+}
+.company-acc .tbl-sell th{
+    font-size: 14px;
+}
+.company-acc .tbl-sell th.pay-head{
+    background-color: #138D75;
+}
+
+.tbl-pay-data th{
+    background-color: #1E8449;
+}
+.tbl-pay-data td{
+    color: #0E6251;
+}
+/*.tbl-pay-data.color{
+    font-weight: bold;
+    color: #0E6251;
+}*/
+/***************************************** TABLE CSS property start ****************************/
+
+.form-field{
+    width: 100%;
+    float: left;
+    display: block;
+    margin: 8px 0;
+}
+.form-field .form-label{
+    float: left;
+    color: #707B7C;
+    font-weight: 600;
+    width: 25%;
+
+    padding: 13px 0;
+    font-size: 18px;
+}
+.form-field .select{
+    width: 60% !important;
+}
+.form-field .form-input{
+    width: 60%;
+    margin: 0;
+}
+/***************************************** DropDown box Css Start **************************************/
+/*.select{
+    float: left;
+}*/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: #F2F4F4;
+    background-image: none;
+    border:1px solid #0D6187;
+}
+.select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2C3E50;
+    /*overflow: hidden;*/
+    border-radius: 3px;
+    float: left;
+}
+select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #0D6187;
+    cursor: pointer;
+
+
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+select::-ms-expand {
+    display: none;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #0D6187;
+    pointer-events: none;
+    color: #fff;
+}
+.select:hover::after {
+    color: #fff;
+}
+
+<!-- For different browsers -->
+.select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+#company-error,#size-error,#creditBy-error{
+    margin-left: 0;
+    position: relative;
+    height: 30px;
+    bottom: 17px;
+}
+#add_company .form-label{
+    width: 30%;
+}
+/***************************************** DropDown box Css End **************************************/
+
+/*.tbl-company td a{
+    text-decoration: none;
+    background-color: #28B463;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+}*/
+.tbl-control-btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.tbl-control-btn:hover{
+    background-color: #1D8348;
+    transition: 0.5s;
+}
+.tbl-control-btn.green{
+    background-color: #28B463;
+}
+.tbl-control-btn.red{
+    background-color: #E74C3C;
+   /* background-color: #EC7063;*/
+}
+.tbl-control-btn.blue{
+    background-color: #3498DB;
+}
+
+.tbl-control-btn.red .fa-trash,.tbl-control-btn .fa-eye{
+    margin-right: 3px;
+}
+.tbl-control-btn:hover{
+    transition: 0.5s;
+}
+.tbl-control-btn.green:hover{
+    background-color: #1D8348;
+}
+.tbl-control-btn.blue:hover{
+    background-color: #2874A6;
+}
+.tbl-control-btn.red:hover{
+    background-color: #CB4335;
+}
+
+/************************************ BREADCRUMB  START ***********************************************/
+
+ul.breadcrumb {
+    /*padding: 10px 16px;*/
+    padding: 7px 0px;
+    list-style: none;
+    margin: 0;
+    /*background-color: #eee;*/
+    background-color: #E7F4FF;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/************************************ BREADCRUMB END ***********************************************/
+.errserver{
+    padding: 10px 0;
+    margin: 0;
+    background-color: #ff5634;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 85%;
+}
+.errserver .errbtn{
+    padding: 10px 14px;
+    margin-left: 34%;
+    color: #fff;
+}
